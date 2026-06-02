@@ -1,0 +1,458 @@
+		<!DOCTYPE html>
+	<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Rubber Bracelets</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #222;
+      background: #f7f9fc;
+    }
+
+    header {
+  background: #0b1b3b;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+    .logo {
+  color: #d4af37;
+  font-size: 38px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+
+    header p {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+    nav {
+      background: #2563eb;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(to right, #dbeafe, #eff6ff);
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      background: #2563eb;
+      color: white;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+    }
+    .bracelet {
+      width: 160px;
+      height: 55px;
+      border-radius: 50px;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .blue { 
+  background: #2563eb; 
+}
+
+.red { 
+  background: #dc2626; 
+}
+
+.black { 
+  background: #111827; 
+}
+
+.green { 
+  background: #16a34a; 
+}
+
+.multi {
+  background: linear-gradient(90deg, #16a34a, #f97316, #2563eb);
+}
+
+.orange-blue {
+  background: linear-gradient(90deg, #f97316, #2563eb);
+}
+
+.orange-pink {
+  background: linear-gradient(90deg, #f97316, #ec4899);
+}
+
+.charms {
+  background: linear-gradient(90deg, #7c3aed, #f59e0b, #ec4899);
+}
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .custom-box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      max-width: 600px;
+      margin: auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 14px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+  display: block;
+  clear: both;
+  width: 360px;
+  box-sizing: border-box;
+  text-align: center;
+  background: #111827;
+  color: white;
+  padding: 25px 20px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: 40px;
+  position: static;
+  border-radius: 0;
+}
+    }
+
+}
+    footer {
+      background: #030712;
+      color: #aaa;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+ .special-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: 16px;
+  align-items: start;
+  width: 100%;
+}
+
+.special-layout .card {
+  padding: 12px;
+}
+
+.special-layout img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+.middle-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mini-contact {
+  text-align: center;
+  background: #111827;
+  color: white;
+  padding: 20px 15px;
+  box-sizing: border-box;
+}
+.contact {
+  text-align: center;
+  background: #111827;
+  color: white;
+  padding: 40px 20px;
+}
+
+.contact p {
+  margin: 8px 0;
+}
+
+footer {
+  display: block;
+  clear: both;
+  width: 100%;
+  text-align: center;
+  background: #030712;
+  color: #aaa;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 20px;
+  }   
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <header>
+  <h1 class="logo">BandCraft</h1>
+  <p>Custom Rubber Bracelets for Kalpataru Aura Residents</p>
+</header>
+
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#customize">Customize</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Create Your Own Rubber Bracelet</h2>
+    <p>
+      Design affordable, high-quality rubber bracelets with your own text,
+      color, message, logo, or event name. Perfect for promotions, awareness
+      campaigns, school events, gifting.
+    </p>
+    <a href="#customize" class="btn">Start Customizing</a>
+  </div>
+
+  <section id="products">
+    <h2>Choose Your Bracelet Style</h2>
+
+    <div class="products">
+
+  <a href="#color" class="card">
+    <div class="bracelet multi">MIXED</div>
+    <h3>Shades of Green, Orange & Blue</h3>
+    <p>Colourful rubber bracelets in mixed shades of green, orange and blue.</p>
+  </a>
+
+  <a href="#color" class="card">
+    <div class="bracelet orange-blue">ORANGE BLUE</div>
+    <h3>Orange & Blue</h3>
+    <p>Bright orange and blue bracelet combinations.</p>
+  </a>
+
+  <a href="#color" class="card">
+    <div class="bracelet orange-pink">ORANGE PINK</div>
+    <h3>Orange & Pink</h3>
+    <p>Fun orange and pink bracelet combinations.</p>
+  </a>
+
+  <a href="#color" class="card">
+    <div class="bracelet charms">CHARMS</div>
+    <h3>Any Colour with Charms</h3>
+    <p>Choose any bracelet colour and add charms to make it special.</p>
+  </a>
+
+</div>
+
+  <div class="card">
+    <div class="bracelet red">ORANGE PINK</div>
+    <h3>Orange & Pink</h3>
+    <p>Fun orange and pink bracelet combinations.</p>
+  </div>
+
+  <div class="card">
+    <div class="bracelet black">CHARMS</div>
+    <h3>Any Colour with Charms</h3>
+    <p>Choose any bracelet colour and add charms to make it special.</p>
+  </div>
+
+</div>
+
+    </div>
+  </section>
+
+  <section id="customize">
+    <h2>Customize Your Bracelet</h2>
+
+    <div class="custom-box">
+      <form onsubmit="sendOrder(event)">
+        <label>Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+
+        <label>Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" required />
+
+<label>Where do you live? *</label>
+<input type="text" id="address" placeholder="Example:Phase 2, 3C 162 " required />
+<label>Delivery Option</label>
+<select id="delivery" required>
+  <option value="">Select delivery option</option>
+  <option value="Pick-up from Club House - Free">Pick-up from Club House library - Free</option>
+  <option value="Home Delivery - ₹5 extra">Home Delivery - ₹5 extra</option>
+</select>
+<p><strong>Collection:</strong> Pick your bracelet from Club House, 2nd Floor Library at 6 PM, you will see someone with a red watch.</p>
+<p><strong>Payment:</strong> Cash only.</p>
+</select/>
+   <label>Bracelet Style</label>
+<select id="color" required>
+  <option value="">Select bracelet style</option>
+  <option value="Shades of Green, Orange & Blue - ₹25">Shades of Green, Orange & Blue - ₹25</option>
+  <option value="Orange & Blue - ₹25">Orange & Blue - ₹25</option>
+  <option value="Orange & Pink - ₹25">Orange & Pink - ₹25</option>
+  <option value="Any Colour with Charms - ₹30">Any Colour with Charms - ₹30</option>
+  <option value="Special Band - ₹30">Special Band - ₹30</option>
+</select>     
+<p><strong>Price:</strong> Regular bracelets ₹25 each. Special bands and charms ₹30 each. Home delivery ₹5 extra.</p>
+  <option value="">Select bracelet style</option>
+  <option>Shades of Green, Orange & Blue</option>
+  <option>Orange & Blue</option>
+  <option>Orange & Pink</option>
+  <option>Any Colour with Charms</option>
+  <option>Special Band - details added in instructions</option>
+</select>
+
+        <label>Quantity</label>
+        <input type="number" id="quantity" placeholder="Example: 100" required />
+
+        <label>Instructions</label>
+<textarea id="details" rows="4" placeholder="Want a special band? Mention colour, charm, size, or any request here."></textarea>
+<p><strong>Special Band:</strong> To get your special band, select Special Band above and enter your request in the instructions area.</p>
+
+        <button type="submit">Place Order on WhatsApp</button>
+      </form>
+<div style="text-align:center; margin-top: 25px;">
+  <a href="#special-bands" class="btn">See Special Band Photos</a>
+</div>
+      <div style="text-align:center; margin-top: 25px;">
+
+    </div>
+  </section>
+  <div class="products">
+  
+<div class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>Phone: +91 7506922133</p>
+  <p>Available for residents of Kalpataru Aura</p>
+</div>
+
+<footer>
+  © 2026 BandCraft. All rights reserved.
+</footer>
+
+<script>
+  function sendOrder(event) {
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let address = document.getElementById("address").value;
+    let delivery = document.getElementById("delivery").value;
+    let color = document.getElementById("color").value;
+    let quantity = document.getElementById("quantity").value;
+    let details = document.getElementById("details").value;
+if (address.trim() === "") {
+  alert("Please enter where you live before placing the order.");
+  return;
+}
+    let message =
+      "Hello, I want to order rubber bracelets.%0A%0A" +
+      "Name: " + name + "%0A" +
+      "Phone: " + phone + "%0A" +
+      "Address: " + address + "%0A" +
+      "Delivery Option: " + delivery + "%0A" +
+      "Bracelet Style: " + color + "%0A" +
+      "Quantity: " + quantity + "%0A" +
+      "Details: " + details + "%0A%0A" +
+      "Pick-up: Club House, 2nd Floor Library at 6 PM%0A" +
+      "Home Delivery: ₹5 extra%0A" +
+      "Payment: Cash only%0A" +
+      "Location: Kalpataru Aura";
+
+    let whatsappNumber = "917506922133";
+
+    window.location.href = "https://api.whatsapp.com/send?phone=" + whatsappNumber + "&text=" + message;
+  }
+</script>
+  
+</body>
+</html>
